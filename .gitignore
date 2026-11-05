@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Compiled C files
+*.o
+*.out
+ex
+*.dSYM/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Private keys
+*.pem
+*.key
+id_rsa
+id_ed25519
