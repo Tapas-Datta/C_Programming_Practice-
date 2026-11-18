@@ -24,28 +24,28 @@
 
 
 
-# include <stdio.h>
-int main () {
-    int number;
-    int i ;
-    int count = 0;
-    int count_1 = 0;
+// # include <stdio.h>
+// int main () {
+//     int number;
+//     int i ;
+//     int count = 0;
+//     int count_1 = 0;
 
-    for (i = 1; i <= 5; i++) {
-        printf("Enter the number: ");
-        scanf("%d", &number);
+//     for (i = 1; i <= 5; i++) {
+//         printf("Enter the number: ");
+//         scanf("%d", &number);
 
-        if (number > 0) {
-           count += 1;
-           printf("the positive number is %d\n", count);
-        }
-        else if (number < 0) {
-           count_1 += 1;
-           printf("the negative number is %d\n",count_1);
-        }
-    }
-    printf("The total positive number is %d\n",count);
-    printf("The total positive number is %d\n",count_1);
+//         if (number > 0) {
+//            count += 1;
+//            printf("the positive number is %d\n", count);
+//         }
+//         else if (number < 0) {
+//            count_1 += 1;
+//            printf("the negative number is %d\n",count_1);
+//         }
+//     }
+//     printf("The total positive number is %d\n",count);
+//     printf("The total positive number is %d\n",count_1);
 
-    return 0 ;
-}
+//     return 0 ;
+// }
