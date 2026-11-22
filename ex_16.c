@@ -4,7 +4,7 @@ int main () {
     double balance = 10000;
     double amount;
     while (balance > 0) {
-    printf("how much do you want to withdraw");
+    printf("how much do you want to withdraw: ");
     scanf ("%lf",&amount);
     if ( amount <= 0){
        printf("Invalid amount");
