@@ -1,31 +1,31 @@
-// #include <stdio.h>
-// int main () {
-//     int i;
-//     int numbers;
+#include <stdio.h>
+int main () {
+    int i;
+    int numbers;
 
-//     printf("Enter how many numbers you want to add in the array: ");
-//     scanf("%d",&numbers);
+    printf("Enter how many numbers you want to add in the array: ");
+    scanf("%d",&numbers);
 
-//     if (numbers <= 0) {
-//         printf("Invalid input");
-//         return 0;
-//     }
+    if (numbers <= 0) {
+        printf("Invalid input");
+        return 0;
+    }
 
-//     int j[numbers];
+    int j[numbers];
 
-//     for (i = 0; i < numbers; i++) {
-//         printf("Enter the number: ");
-//         scanf("%d",&j[i]);
-//     }
+    for (i = 0; i < numbers; i++) {
+        printf("Enter the number: ");
+        scanf("%d",&j[i]);
+    }
 
-//     printf("All your numbers are:\n");
+    printf("All your numbers are:\n");
 
-//     for (i = 0; i < numbers; i++) {
-//         printf("%d\n",j[i]);
-//     }
+    for (i = 0; i < numbers; i++) {
+        printf("%d\n",j[i]);
+    }
 
-//     return 0;
-// }
+    return 0;
+}
 
 
 # include <stdio.h>

@@ -28,8 +28,8 @@ int main () {
         }
     }
     printf("your total positive number is:%d\n ",positives_number);
-    printf("your negative number is:%d\n ",negative_number);
-    printf("the zero number: %d\n ",zeros);
+    printf("your negative number is:%d\n",negative_number);
+    printf("the zero number: %d",zeros);
     return 0 ;
 
 }
