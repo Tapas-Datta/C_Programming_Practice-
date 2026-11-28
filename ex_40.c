@@ -6,6 +6,9 @@ int main () {
     int input ;
     int deposit;
     int withdraw;
+    int total_deposit = 0;
+    int total_withdraw = 0 ;
+    int succesful = 0;
     printf("How many transaction do you want: ");
     scanf("%d",&transaction);
     for (i =1 ; i<= transaction; i++ ){
@@ -18,6 +21,8 @@ int main () {
             printf("How much you want to deposit: ");
             scanf("%d",&deposit);
             balance += deposit;
+            total_deposit += deposit;
+            succesful += 1;
             printf("You deposit%d\ntotal balance now%d\n",deposit,balance);
         }
         else if (input == 2){
@@ -26,20 +31,27 @@ int main () {
             if (withdraw >balance){
                 printf("you have not enough balance");
             }
+            else if (withdraw <= 0){
+                printf("Negative is not possible");
+                break;
+            }
             else {
                 balance -= withdraw;
+                total_withdraw += withdraw;
+                succesful +=1;
                 printf("your total withdrawl is%d\ntotal balance is\n%d",withdraw,balance);
             }
         }
         else if (input == 3){
             printf("thank you");
-            return 0;
+            break;
         }
         
     }
     printf("Total balance is:%d\n",balance);
-    printf("total deposit is:%d\n",deposit);
-    printf("total withdraw is%d\n",withdraw);
+    printf("total deposit is:%d\n",total_deposit);
+    printf("total withdraw is%d\n",total_withdraw);
+    printf("Successful Transction%d",succesful);
     return 0 ;
 
 }
